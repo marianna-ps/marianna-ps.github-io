@@ -211,6 +211,12 @@ img {
         font-size: 130%;
         width: 50%;
     }
+    #challenge,
+    #players,
+    #player-amount, 
+    #curr-players{
+        font-size: 0.7em;
+    }
 
     #challenge-button:active,
     #add-button:active {
