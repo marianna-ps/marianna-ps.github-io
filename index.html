@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Random Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="backend.js"></script> 
+</head>
+<body>
+    <div id="header" class="container">
+        <img src="phasmo_challenge_logo.png" alt="logo">
+    </div>
+
+    <div id="main-container" class="container"> 
+        <div id="button-input" class="button-container">
+            <input type='text' id="player-names" name="player-names" placeholder="names"/>
+            <input type="button" id="add-button" value="add player">
+          
+            <button id="challenge-button" onclick="get_challenge()">challenge</button>
+        </div>
+
+        <div id="text-box" class="container">
+            <p id="challenge" class="text-box">
+                <p id="info" class="text-box">
+                This is a random challenge generator for the game Phasmophobia. 
+                By pressing the challenge-button, you get a random challenge 
+                and the player(s) who are supposed to complete the challenge. 
+                <br />
+                <br />
+                Feel to use this page in your streams and such. You can chroma key the background 
+                and have the page overlayed in your stream. 
+                <br />
+                <br />
+                The page is not maintained regularly - it is just a small practise project :)
+                </p>
+                <div id="rules"class="text-box">Start by adding players (one player at a time).
+                You can add up to 4 players.
+                You can add players after taking a challenge too - just add a new player
+                and get a new challenge. Players can't be deleted - if you want a new game with
+                different players, you have to refresh.
+                </div>
+                <p id="player-challenges"class="text-box"></p>
+            </p>
+            <p id="curr-players" class="text-box"></p>
+            <p id="players" class="text-box"></p>
+            <p id="player-amount"class="text-box"></p>
+        </div>        
+    </div>
+</body>
+</html>

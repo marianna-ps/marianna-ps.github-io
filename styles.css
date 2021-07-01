@@ -1,0 +1,219 @@
+body {
+    background: #040F16;   
+    color: white;
+    font-family: Bahnschrift;
+}
+
+.container,
+.button-container {
+    margin: auto;
+    width: 40%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;  
+    padding: 2%;
+    width: 45%;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+} 
+
+img {
+    height: 30%;
+    width: 40%;
+    margin: auto;
+    padding: 3%;
+}
+
+#main-container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#text-box {
+    margin-bottom: 1%;
+    padding: 2%;
+    background: #008cbb;
+    border-radius: 20px;
+    border: 2px #4a93ac solid; 
+    box-shadow: 0 0 10px #4a93ac;
+    font-size: 2em;
+}
+
+#player-names {
+    margin-left: 5%;
+    width: 30%;
+    flex: 1 1 auto;
+    border: 1px solid #8BAAAD;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3d3f3f;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #000022;
+    font-size: 2.5em;
+    font-variant: small-caps; 
+}
+
+::placeholder {
+    color: #000022;
+    opacity: 0.7;
+}
+
+#challenge-button,
+#add-button{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 80px;
+    flex: 1 1 auto;
+    background-color: #3D2B56; 
+    border: 1px #66499b groove; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px #66499b;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    color: #F4FFF8;
+    font-size: 2.5em;
+    font-variant: small-caps;
+}
+
+#challenge-button:hover,
+#add-button:hover {
+    background-color: #473364; 
+}
+
+#challenge-button:active,
+#add-button:active {
+    background-color: #4e396e; 
+    box-shadow: 0 0 15px #66499b;
+    font-size: 2.7em;
+}
+
+#challenge,
+#players,
+#player-amount,
+#curr-players{
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#player-challenges {
+    padding-left: 15%;
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        margin-top: 1%;
+    }
+    .text-box {
+        font-size: 80%;
+    }
+
+    .button-container {
+      font-size: 80%;
+    }
+
+    .container,
+    .button-container, img {
+        width: 60%;
+    }
+
+    #challenge,
+    #players,
+    #player-amount 
+    #curr-players{
+        font-size: 1.1em;
+    }
+
+    #player-challenges{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin-top: 1%;
+    }
+   
+    .container,
+    .button-container, img {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        margin-top: 1%;
+    }
+    .text-box {
+        font-size: 60%;
+    }
+    .button-container {
+      font-size: 70%;
+      width: 80%;
+    }
+
+    #challenge-button,
+    #add-button{
+        height: 50px;
+    }
+
+    #challenge,
+    #players,
+    #player-amount 
+    #curr-players{
+        font-size: 0.9em;
+    }
+
+    #player-challenges{
+        font-size: 0.7em;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        margin-top: 1%;
+    }
+
+    .button-container {
+        display: block; 
+        padding: 2%;
+        align-items: center;      
+    }
+
+    #text-box {
+        width: 70%;
+        font-size: 120%;
+    }
+
+    #challenge-button,
+    #add-button,
+    #player-names{
+        display:block;
+        height: 25px;
+        margin: auto;
+        margin-bottom: 5%;
+        align-self: center;
+        font-size: 130%;
+        width: 50%;
+    }
+
+    #challenge-button:active,
+    #add-button:active {
+        font-size: 140%;
+    }
+}
